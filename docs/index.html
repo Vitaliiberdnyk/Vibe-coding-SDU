@@ -34,11 +34,13 @@
     .contact { background: #ffd9ea; padding: 65px 0; }
     .contact-box { background: white; border: 2px solid #f5aacb; border-radius: 22px; padding: 32px; }
     .contact-box h2 { margin-top: 0; color: #851247; }
-    .email { display: inline-block; padding: 13px 19px; background: var(--deep-pink); color: white; text-decoration: none; font-weight: 800; border-radius: 999px; }
+    .contact-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .email, .phone { display: inline-block; padding: 13px 19px; background: var(--deep-pink); color: white; text-decoration: none; font-weight: 800; border-radius: 999px; }
     footer { background: #65103c; color: white; border-top: 6px solid #ff5ca8; }
     .footer-inner { min-height: 140px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
     .footer-inner h2 { margin: 0 0 8px; }
     .footer-inner p { margin: 0; color: #ffd0e4; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px; }
     .footer-inner a { color: white; text-decoration: none; border: 2px solid #ffd0e4; border-radius: 999px; padding: 12px 18px; font-weight: 800; }
     @media (max-width: 760px) {
       .header-inner, .footer-inner { flex-direction: column; align-items: flex-start; justify-content: center; padding: 24px 0; }
@@ -82,7 +84,7 @@
         <article class="card">
           <div class="icon">📍</div>
           <h3>Based In</h3>
-          <p>Cardiff, United Kingdom.</p>
+          <p>Kolding, Denmark.</p>
         </article>
         <article class="card">
           <div class="icon">💗</div>
@@ -96,8 +98,11 @@
       <div class="container">
         <div class="contact-box">
           <h2>Contact Me</h2>
-          <p>This sample website uses a placeholder email address for demonstration.</p>
-          <a class="email" href="mailto:hello@example.com">Email: hello@example.com</a>
+          <p>This sample website uses placeholder contact details for demonstration.</p>
+          <div class="contact-links">
+            <a class="email" href="mailto:hello@example.com">Email: hello@example.com</a>
+            <a class="phone" href="tel:+4512345678">Phone: +45 12 34 56 78</a>
+          </div>
         </div>
       </div>
     </section>
@@ -107,9 +112,12 @@
     <div class="container footer-inner">
       <div>
         <h2>Vitalii Berdnyk</h2>
-        <p>Student · Cardiff, United Kingdom</p>
+        <p>Student · Kolding, Denmark</p>
       </div>
-      <a href="mailto:hello@example.com">hello@example.com</a>
+      <div class="footer-links">
+        <a href="mailto:hello@example.com">hello@example.com</a>
+        <a href="tel:+4512345678">+45 12 34 56 78</a>
+      </div>
     </div>
   </footer>
 </body>
