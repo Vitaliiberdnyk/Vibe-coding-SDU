@@ -23,7 +23,3 @@ Personal "About Me" site for Vitalii Berdnyk. Single static page, plain HTML/CSS
 2. Replace placeholder contact email with real contact links (still no phone/address).
 3. Add a projects section.
 
-## Stray files
-
-- `Новий Text Document.txt` is an empty, unrelated file — ignore it.
-- `Readme.md` was deleted in the working tree and contains only junk (`fgnefghdshsf`); do not restore it.
