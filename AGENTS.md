@@ -12,6 +12,7 @@ Next steps: fix colour contrast, add real contact links, add a projects section.
 
 - Use plain HTML, CSS and JavaScript only. No frameworks or dependencies.
 - All colours as CSS variables in :root, never hard-coded.
+- Always use the existing pink colour variables for new elements.
 - Class names in kebab-case (project-card).
 - 2-space indentation.
 - A short comment above each CSS section.
