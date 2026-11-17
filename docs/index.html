@@ -31,6 +31,13 @@
     .card h3 { margin: 10px 0; color: #b51661; font-size: 23px; }
     .card p { margin: 0; color: #73435c; line-height: 1.6; }
     .icon { font-size: 30px; }
+    /* Projects */
+    .projects { padding: 70px 0; }
+    .projects > h2 { color: var(--deep-pink); font-size: 36px; margin-bottom: 8px; }
+    .projects > p { color: #73435c; }
+    .projects .cards { grid-template-columns: repeat(2, 1fr); }
+    .project-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+    .project-links a { color: var(--deep-pink); font-weight: 800; }
     .contact { background: #ffd9ea; padding: 65px 0; }
     .contact-box { background: white; border: 2px solid #f5aacb; border-radius: 22px; padding: 32px; }
     .contact-box h2 { margin-top: 0; color: #851247; }
@@ -45,6 +52,7 @@
     @media (max-width: 760px) {
       .header-inner, .footer-inner { flex-direction: column; align-items: flex-start; justify-content: center; padding: 24px 0; }
       .cards { grid-template-columns: 1fr; }
+      .projects .cards { grid-template-columns: 1fr; }
       .hero { padding-top: 55px; }
     }
   </style>
@@ -57,6 +65,7 @@
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
         <a href="#facts">Quick Facts</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -91,6 +100,30 @@
           <h3>My Interests</h3>
           <p>I enjoy learning, exploring new ideas, solving problems, and finding interesting things to create.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <p>A few things I've built while learning.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>bilhub.dk</h3>
+            <p>A used-car marketplace for Denmark, built with a friend. I learned how to plan features and test them with real users.</p>
+            <div class="project-links">
+              <a href="https://bilhub.dk">View project</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>AI Expert course</h3>
+            <p>A beginner course about AI tools for Ukrainian learners. I learned how to explain complex tools in simple steps.</p>
+          </article>
+          <article class="card">
+            <h3>This website</h3>
+            <p>My About Me site, built with an AI coding agent using AGENTS.md, PLAN.md and Git.</p>
+          </article>
+        </div>
       </div>
     </section>
 
