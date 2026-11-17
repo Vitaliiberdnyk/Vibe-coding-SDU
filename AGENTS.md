@@ -1,27 +1,29 @@
 # Project
 
-Personal About Me website. Plain HTML and CSS, no frameworks.
-Hosted on GitHub Pages from the docs/ folder. Main file: docs/index.html.
+Personal "About Me" site for Vitalii Berdnyk. Single static page, plain HTML/CSS only — no JS, frameworks, build step, or dependencies.
 
-## State
+- GitHub Pages serves the `docs/` folder from the `main` branch; the entire site is `docs/index.html` (inline `<style>`, no separate CSS/JS files).
+- No package manifest, CI, or test/lint tooling exists. Verify changes by opening `docs/index.html` in a browser; there are no developer commands to run.
 
-One-page site: header with nav, hero, quick facts cards, contact, footer.
-Next steps: fix colour contrast, add real contact links, add a projects section.
+## Working rules
 
-## Conventions
+- Ask before committing, pushing, or deleting/renaming files. Commits on `main` publish directly to the live site.
+- Never add personal data (phone number, physical address) to the site. Contact uses placeholder `hello@example.com` in two places (contact box + footer).
+- Keep visible text in simple, friendly English.
 
-- Use plain HTML, CSS and JavaScript only. No frameworks or dependencies.
-- All colours as CSS variables in :root, never hard-coded.
-- Always use the existing pink colour variables for new elements.
-- Class names in kebab-case (project-card).
-- 2-space indentation.
-- A short comment above each CSS section.
-- Visible text in simple, friendly English.
-- Text must meet WCAG AA colour contrast (4.5:1).
-- Keep the existing pink colour style unless I ask to change it.
+## HTML/CSS conventions
 
-## Do not
+- Class names: kebab-case. Indentation: 2 spaces. Short comment above each CSS section.
+- Preserve the pink theme. Reuse the `--deep-pink` variable in `:root` where one exists.
+- **Known gap:** the `AGENTS.md` rule "all colours as CSS variables in `:root`, never hard-coded" is NOT met — most colours in `docs/index.html` are still hard-coded hex/rgba values. Fixing colour contrast (WCAG AA ≥ 4.5:1) is a pending task; expect to convert these to variables as part of that work rather than assuming the rule is already followed.
 
-- Do not commit or push without asking me first.
-- Do not delete or rename files without asking me first.
-- Do not add personal data (phone, address) to the site.
+## Next steps (from repo handoff)
+
+1. Fix colour contrast to WCAG AA and migrate hard-coded colours to `:root` variables.
+2. Replace placeholder contact email with real contact links (still no phone/address).
+3. Add a projects section.
+
+## Stray files
+
+- `Новий Text Document.txt` is an empty, unrelated file — ignore it.
+- `Readme.md` was deleted in the working tree and contains only junk (`fgnefghdshsf`); do not restore it.
