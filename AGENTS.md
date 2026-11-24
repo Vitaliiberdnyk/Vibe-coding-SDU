@@ -15,11 +15,12 @@ Personal "About Me" site for Vitalii Berdnyk. Single static page, plain HTML/CSS
 
 - Class names: kebab-case. Indentation: 2 spaces. Short comment above each CSS section.
 - Preserve the pink theme. Reuse the `--deep-pink` variable in `:root` where one exists.
-- **Known gap:** the `AGENTS.md` rule "all colours as CSS variables in `:root`, never hard-coded" is NOT met — most colours in `docs/index.html` are still hard-coded hex/rgba values. Fixing colour contrast (WCAG AA ≥ 4.5:1) is a pending task; expect to convert these to variables as part of that work rather than assuming the rule is already followed.
+- All colours are defined as CSS variables in `:root`; no colour values are hard-coded elsewhere in `docs/index.html`. Text contrast meets WCAG AA (≥ 4.5:1 for normal text).
 
 ## Next steps (current)
 
-1. Contact pass — remove the phone number, add LinkedIn and GitHub links, rewrite the contact note, and update these rules. Implemented in `docs/index.html`; awaiting review and local commit.
-2. Colour pass — fix WCAG AA contrast and migrate hard-coded colours to `:root` variables. Starts only after the contact pass is committed.
+1. Contact pass — done and committed locally as `5f9ea72` ("Update contact section with LinkedIn and GitHub").
+2. Colour pass — implemented in `docs/index.html`; awaiting review and local commit. No push.
 3. Projects section — already implemented; out of scope for this round.
+4. Push both local commits together only after a separate instruction.
 
